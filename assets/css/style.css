@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #2b5876;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    background-image: -moz-linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 5px;
+    color: #DDD;
+    box-shadow: 5px 5px 6px #222;
+}
+
+.container h1,
+.container p {
+    margin: 0px;
+    line-height: 40px;
+}
+
+fieldset {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border: 1px solid #3b8dad;
+}
+
+fieldset legend {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    padding: 5px;
+}
+
+input[type=text],
+input[type=email],
+input[type=date] {
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid #3b8dad;
+    background: none;
+    color: #DDD;
+    width: 300px;
+}
+
+input[type=date] {
+    border: 1px solid #3b8dad;
+    width: 150px;
+    margin-top: 10px;
+}
+
+input::placeholder {
+    color: #DDD;
+}
+
+#gender,
+#birthday-date {
+    margin: 10px;
+}
+
+#birthday {
+    margin: 0px;
+}
+
+#gender input {
+    margin: 8px;
+}
+
+@media (max-width:575px) {
+    .container {
+        width: 400px;
+    }
+}
+
+@media (max-width: 465px) {
+    .container {
+        width: 100vh;
+        height: 100vh;
+        margin: 0px;
+    }
+} 
+
+@media (max-width:400px) {
+    fieldset {
+        border: none;
+    }
+
+    input[type=text],
+    input[type=email] {
+        width: 250px;
+    }
+}

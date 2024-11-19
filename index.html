@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro</h1>
+        <p>Complete suas informações</p>
+
+        <form action="" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="input-container">
+                    <input type="text" name="user" id="id-user" placeholder="Nome Completo" required autofocus>
+                </div>
+        
+                <div class="input-container">
+                    <input type="email" name="email" id="id-email" placeholder="Email" required>
+                </div>
+        
+                <div class="input-container">
+                    <input type="text" name="phone" id="phone" placeholder="Telefone" required>
+                </div>
+        
+                <div>
+                    <label id="gender">
+                        Sexo:
+                        <label>
+                            <input type="radio" name="sexo" id="feminino" value="F" />Feminino
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" id="masculino" value="M" />Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" id="outro" value="Outro" />Outro
+                        </label>
+                    </label>
+                </div>
+                
+                <div>
+                    <label id="birthday-date">
+                        Data de nascimento: <br>
+                        <input type="date" name="birthday" id="birthday" required>
+                    </label>
+                </div>
+            </fieldset>
+        
+        </form>
+    </div>
+</body>
+</html>
